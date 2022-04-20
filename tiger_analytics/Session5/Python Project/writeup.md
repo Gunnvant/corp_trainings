@@ -45,3 +45,119 @@ Create three files:
 1. `utils.py`: This file should have the core logic of creating data dictionary and converting the json data into a table
 2. `config.py`: This file will contain information on the paths of raw json and path where the data dictionary and tabular data needs to be written
 3. `run.py`: This file will be the entry point of the application, you will need to run this file and it will have imports from `utils.py` and `config.py`
+
+**Task 3**
+
+Use the `peter_pan.txt`. Download the file [here](https://drive.google.com/file/d/1D4q06bZ_hSEICxE8j843N4KasLq8YWPq/view?usp=sharing)  to answer the questions. 
+
+a. The number of characters in the file are?
+
+1. **274394**
+2. 274951
+3. 374950
+4. 374951
+
+Provide your code here
+```python
+your code goes here
+```
+
+b. How many chapters does this text have?
+
+1. 18
+2. **17**
+3. 16
+4. 21
+
+Provide your code here
+```python
+your code goes here
+```
+
+c. Find the index where Chapter II starts?
+
+Provide your code here
+```python
+your code goes here
+```
+
+d. Find the index where Chapter III starts?
+
+Provide your code here
+```python
+your code goes here
+```
+
+e. How many characters/alphabets/symbols (including white spaces etc) are there in Chapter II?
+
+1. **15926**
+2. 15921
+3. 15929
+4. 15920
+
+Provide your code here
+```python
+your code goes here
+```
+
+**Task 4**
+
+a. Use the dataset called [narcos.json](https://drive.google.com/file/d/1JdRVciBHaPu33Gc461nk6Y28EBD8dfyL/view?usp=sharing). In this json file is there a key named `WebChannel`?
+
+1. Yes
+2. **No**
+
+```python
+your code goes here
+```
+b. Now define a function called `fetch()` which takes the dictionary created after reading the json file and returns a list of lists with following fields:
+
+1. id of the episode
+2. url of the episode
+3. name of the episode
+4. season of the episode
+5. number of the episode
+6. type
+7. airdate
+8. airtime
+9. airtimestamp
+10. runtime
+11. summary (Remove the ```<p>``` and ```</p>``` tags from the summary)
+
+``` python
+def fetch(dicttionary_json_data):
+# your code goes here
+    return result ##result should be a list of lists with the fields given above.
+
+```
+
+c. Now write a function named `dump()` which will write the contents of the results obtained from `fetch()` defined earlier to a csv file. The headers of the file should be in the following order:
+
+1. id 
+2. url 
+3. name 
+4. season 
+5. number 
+6. type
+7. airdate
+8. airtime
+9. airtimestamp
+10. runtime
+11. summary 
+
+The function should take the following inputs:
+1. Path where you want to save the results
+2. The name you want to give this file
+3. The output of `fetch()` function
+
+The function should return:
+1. True if file has been created
+2. False otherwise (Hint use the `os` module in python to check if a file at a given location exits or not)
+
+```python
+import os
+import csv
+def dump(path,name,results):
+    '''Your code goes here'''
+    s
+```
