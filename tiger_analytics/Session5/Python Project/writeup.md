@@ -161,3 +161,6 @@ def dump(path,name,results):
     '''Your code goes here'''
     s
 ```
+
+## How to submit?
+For `task1` and `task2` you need to submit three python files for `task1.b` and `task2.b` (`config.py`,`run.py`,`utils.py`). For `task1.a` and `task2.a` submit either a notebook or a python file. For all the other tasks, submit a notebook with code and correct option in the markdown.
