@@ -1,0 +1,1 @@
+Use the dataset [here](https://drive.google.com/file/d/1RdFOmb7vHg2w3EbEJTw7DvI2M1GBqkgM/view) to get predictions for the images and arrange them on respective folders.
